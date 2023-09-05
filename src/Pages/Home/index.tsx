@@ -13,7 +13,7 @@ import BottomSearchBar from '../../Components/BottomSearchBar';
 export default function Home() {
     return (
         <div>
-            HOMEPAGE!
+            HOMEPAGE! (Map goes here)
             <BottomSearchBar></BottomSearchBar>
         </div>
     );
