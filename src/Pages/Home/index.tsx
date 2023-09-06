@@ -1,6 +1,9 @@
 import './index.scss';
-import React from 'react';
-import BottomSearchBar from '../../Components/BottomSearchBar';
+import React, { useState, useEffect } from 'react';
+import BottomSearchBar from '../../Components/bottomSearchBar';
+import MapView from '../../Components/MapView';
+import { API_KEY } from "../../config";
+
 
 /* const homePage = () => {
     return (
@@ -12,9 +15,8 @@ import BottomSearchBar from '../../Components/BottomSearchBar';
 
 export default function Home() {
     return (
-        <div>
-            HOMEPAGE! (Map goes here)
-            <BottomSearchBar></BottomSearchBar>
+        <div className='map-container'>
+            <MapView/>
         </div>
     );
-};
+}
