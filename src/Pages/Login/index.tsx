@@ -3,6 +3,7 @@ import './index.scss';
 import { auth, app } from '../../firebase'
 import { signInWithEmailAndPassword } from 'firebase/auth'
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Login() {
 
@@ -37,6 +38,9 @@ export default function Login() {
 
     return (
         <>
+        <Link to="/">
+            <button>Home</button>
+        </Link>
         <div class="background1">
         <div className="container-signin1">
         <section class = "wrapper1">
