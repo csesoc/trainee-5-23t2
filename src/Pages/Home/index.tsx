@@ -17,19 +17,22 @@ import { Link } from 'react-router-dom';
 export default function Home() {
     return (
         <>
-            <div className='button-container m-2' style={{ zIndex: 1, position: 'fixed'}}>
-                <Link to="/login">
+            <div className='button-container' style={{ zIndex: 1, position: 'fixed', top: 0, left: 0}}>
+                <Link to="/login" className='m-2'>
                     <button>Login</button>
                 </Link>
-                <Link to="/signup">
+                <Link to="/signup" className='m-2'>
                     <button>Sign Up</button>
                 </Link>
-                <Link to="/about">
+                <Link to="/about" className='m-2'>
                     <button>About</button>
                 </Link>
             </div>
-            <div className='map-container' style={{ zIndex: -1 }}>
+            <div className='map-container' style={{ zIndex: -1, position: 'fixed', top: 0, left: 0}}>
                 <MapView/>
+            </div>
+            <div className='bottom-searchbar-container' style={{ zIndex: 1, position: 'fixed', top: 60, left: 0}}>
+                <BottomSearchBar />
             </div>
         </>
     );
