@@ -1,4 +1,14 @@
-.container-signin{ 
+.background1 {
+    background-image: url('/src/Pages/Login/johnnysins.jpg');
+    height: 1000px;
+    width: 3000px;
+    background-position: absolute;
+    background-repeat: repeat;
+}
+
+
+.container-signin1{ 
+    background-image: url('/src/Pages/Login/lifeisroblox.jpg');
     display: flex; 
     justify-content: center; 
     align-items: center; 
@@ -9,7 +19,8 @@
     margin: 0 auto;
 }
 
-.wrapper {
+.wrapper1{
+    background-image: url('/src/Pages/Login/lifeisroblox.jpg');
     max-width: 28rem;
     width: 100%;
     margin: 0rem;
@@ -18,7 +29,6 @@
     outline: none;
     border-radius: 0.25rem;
     color: black;
-    background: white;
     border: 1px solid rgb(0, 0, 0);
 }
 

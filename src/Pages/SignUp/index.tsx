@@ -39,8 +39,9 @@ export default function SignUp() {
 
     return (
         <>
-        <div className="container-signin">
-        <section class = "wrapper">
+        <div class="background2">
+        <div className="container-signin2">
+        <section class = "wrapper2">
             <div class="heading">
                 <h1 class="text text-large"><strong>Register</strong></h1>
                 <p class="text text-normal"> Already a user? <span> <a href="/login" class="text text-links">Log in</a></span></p>
@@ -60,6 +61,7 @@ export default function SignUp() {
                 <div> {errorMessage} </div>
             </form>
         </section>
+        </div>
         </div>
         </>
     );

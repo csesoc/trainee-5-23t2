@@ -17,6 +17,7 @@ export default function Home() {
     return (
         <div className='map-container'>
             <MapView/>
+            <h2> <a href = "/settings"> Settings </a> </h2>
         </div>
     );
 }

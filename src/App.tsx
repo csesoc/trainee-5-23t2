@@ -6,6 +6,7 @@ import Home from "./Pages/Home"
 import About from "./Pages/About"
 import Login from "./Pages/Login"
 import SignUp from "./Pages/SignUp"
+import Settings from "./Pages/Settings"
 import { createBrowserRouter, BrowserRouter, Routes, Route, Link, NavLink, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" element={<About />}/>
           <Route path="/login" element={<Login />}/>
           <Route path="/signup" element={<SignUp />}/>
+          <Route path="/settings" element={<Settings />}/>
         </Routes>
 
       </div>

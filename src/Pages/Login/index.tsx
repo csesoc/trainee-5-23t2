@@ -17,15 +17,17 @@ export default function Login() {
         e.preventDefault();
         signInWithEmailAndPassword(auth, email, password)
         .then((userCredential) => {
+            const user = userCredential.user;
+            console.log(user)
             navigate("/")
         })
         .catch((error) => {
             if (error.code == "auth/invalid-login-credentials") {
                 setErrorMessage("Invalid Login");
+            } else if (error.code == "auth/invalid-email") {
+                setErrorMessage("Invalid Email")
             } else if (error.code == "auth/missing-password") {
                 setErrorMessage("Missing Password")
-            } else if (error.code == "auth/missing-email") {
-                setErrorMessage("Missing Email")
             } else {
                 setErrorMessage(error.message);
             }
@@ -35,11 +37,12 @@ export default function Login() {
 
     return (
         <>
-        <div className="container-signin">
-        <section class = "wrapper">
+        <div class="background1">
+        <div className="container-signin1">
+        <section class = "wrapper1">
             <div class="heading">
                 <h1 class="text text-large"><strong>Sign In</strong></h1>
-                <p class="text text-normal"> New user? <span> <a href="/signup" class="text text-links">Create an accounts</a></span></p>
+                <p class="text text-normal"> New user? <span> <a href="/signup" class="text text-links">Create an account</a></span></p>
             </div>
             <form onSubmit={signIn}>
                 <div class="input-control">
@@ -56,6 +59,7 @@ export default function Login() {
             </form>
             <div> {errorMessage} </div>
         </section>
+        </div>
         </div>
         </>
     );
