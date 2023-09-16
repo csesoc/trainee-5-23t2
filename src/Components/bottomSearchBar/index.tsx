@@ -19,7 +19,7 @@ const BottomSearchBar = () => {
     return (
       <div className="fixed bottom-0 left-0 right-0 bg-gray-800 p-4">
         <div className="max-w-screen-lg mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between bg-gray-400">
 
             <div className="flex md:w-3/4">
             <input

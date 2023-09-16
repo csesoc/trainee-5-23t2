@@ -17,7 +17,7 @@ import { Link } from 'react-router-dom';
 export default function Home() {
     return (
         <>
-            <div className='button-container' style={{ zIndex: 1, position: 'fixed', top: 0, left: 0}}>
+            <div className='button-container flex flex-row' style={{ zIndex: 1, position: 'fixed', top: 0, left: 0}}>
                 <Link to="/login" className='m-2'>
                     <button>Login</button>
                 </Link>
