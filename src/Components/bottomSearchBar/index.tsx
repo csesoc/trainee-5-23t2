@@ -28,6 +28,7 @@ const BottomSearchBar = () => {
                 placeholder="Search on campus..."
                 value={searchInput}
                 onChange={handleInputChange}
+                
             />
             <button
                 className="bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-4 mx-1"

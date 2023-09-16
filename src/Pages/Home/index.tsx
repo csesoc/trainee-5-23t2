@@ -31,7 +31,7 @@ export default function Home() {
                     <button>Settings</button>
                 </Link>
             </div>
-            <div className='map-container' style={{ zIndex: -1, position: 'fixed', top: 0, left: 0}}>
+            <div className='map-container' style={{ zIndex: 0, position: 'fixed', top: 0, left: 0}}>
                 <MapView/>
             </div>
             <div className='bottom-searchbar-container' style={{ zIndex: 1, position: 'fixed', top: 60, left: 0}}>
