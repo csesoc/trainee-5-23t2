@@ -3,6 +3,7 @@ import './index.scss';
 import { auth, app } from '../../firebase'
 import { onAuthStateChanged, signOut, deleteUser, sendPasswordResetEmail } from "firebase/auth";
 import { useNavigate } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 export default function Settings() {
 
@@ -48,6 +49,9 @@ export default function Settings() {
 
     return (
         <>
+        <Link to="/">
+            <button>Home</button>
+        </Link>
         <div class="background3">
         <div className="container-signin3">
         <section class = "wrapper3">

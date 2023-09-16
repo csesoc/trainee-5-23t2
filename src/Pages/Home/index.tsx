@@ -27,6 +27,9 @@ export default function Home() {
                 <Link to="/about" className='m-2'>
                     <button>About</button>
                 </Link>
+                <Link to="/settings" className='m-2'>
+                    <button>Settings</button>
+                </Link>
             </div>
             <div className='map-container' style={{ zIndex: -1, position: 'fixed', top: 0, left: 0}}>
                 <MapView/>
