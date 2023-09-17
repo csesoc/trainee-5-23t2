@@ -23,7 +23,7 @@ export default function Profile() {
         <div className="flex flex-col items-center justify-between mb-4">
           <h1 className="text-2xl font-semibold flex">Jeff Bezos</h1>
           <img src="johnnysins.jpg" alt="" className='flex' />
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flexss">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flex">
             Edit profile
           </button>
         </div>
