@@ -7,6 +7,7 @@ import About from "./Pages/About"
 import Login from "./Pages/Login"
 import SignUp from "./Pages/SignUp"
 import Settings from "./Pages/Settings"
+import Profile from "./Pages/Profile"
 import { createBrowserRouter, BrowserRouter, Routes, Route, Link, NavLink, createRoutesFromElements, RouterProvider } from 'react-router-dom';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
           <Route path="/login" element={<Login />}/>
           <Route path="/signup" element={<SignUp />}/>
           <Route path="/settings" element={<Settings />}/>
+          <Route path="/profile" element={<Profile />}/>
         </Routes>
 
       </div>
