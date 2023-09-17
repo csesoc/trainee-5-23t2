@@ -22,16 +22,15 @@ export default function Profile() {
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
         <div className="flex flex-col items-center justify-between mb-4">
           <h1 className="text-2xl font-semibold flex">Jeff Bezos</h1>
-          <img src="johnnysins.jpg" alt="" className='flex' />
-          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flexss">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flexs">
             Edit profile
           </button>
         </div>
         <div className="flex items-center space-x-4">
           <img
-            // src={avatarImage}
+            src="./src/Pages/Profile/bezos.jpg"
             alt="User Avatar"
-            className="w-24 h-24 rounded-full"
+            className="w-12 h-12 rounded-full flexs"
           />
           <div>
             <p className="text-xl font-semibold">Bio</p>
