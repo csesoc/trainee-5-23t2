@@ -22,6 +22,7 @@ export default function Profile() {
       <div className="max-w-2xl mx-auto bg-white rounded-lg shadow-md p-6">
         <div className="flex flex-col items-center justify-between mb-4">
           <h1 className="text-2xl font-semibold flex">Jeff Bezos</h1>
+          <img src="johnnysins.jpg" alt="" className='flex' />
           <button className="bg-blue-500 hover:bg-blue-600 text-white py-2 px-4 rounded flexss">
             Edit profile
           </button>
@@ -35,7 +36,7 @@ export default function Profile() {
           <div>
             <p className="text-xl font-semibold">Bio</p>
             <p className="text-gray-700">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Hi my name is Jeff Bezos and I want to make a shipping company or something.
             </p>
           </div>
         </div>
